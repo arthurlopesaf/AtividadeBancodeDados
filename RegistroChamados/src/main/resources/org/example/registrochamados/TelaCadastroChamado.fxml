@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.registrochamados.TelaCadastroChamadoController">
+    <children>
+        <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="380.0" prefWidth="380.0" spacing="15.0">
+            <children>
+                <Label text="Registrar Chamados">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="35.0" />
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="txtSolicitante" promptText="Solicitante">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtEquipamento" layoutX="10.0" layoutY="204.0" promptText="Equipamento">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtProblema" layoutX="10.0" layoutY="224.0" promptText="Problema">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <ComboBox fx:id="cmbPrioridade" prefWidth="150.0" promptText="Prioridade" />
+                <Button mnemonicParsing="false" onAction="#btnRegistrarChamado" text="Registrar Chamado">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#btnLimparCampos" text="Limpar Campos">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
